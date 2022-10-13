@@ -1,3 +1,4 @@
+
 /* top Navbar */
 .top-nav {
     justify-content: space-evenly;
@@ -7,29 +8,46 @@
 }
 .header-wrap {
     margin: 0 !important;
+    
 }
+
 .header-wrap .logo-part {
     margin-top: 10px !important;
+    padding-left: 26px;
 }
 
 .call-number {
     margin-top: 10px;
     line-height: 0;
     color: rgb(255, 184, 4);
-
+    
 }
 
+.call-icon{
+    margin-left: 5px;
+}
+
+.bkash-part {
+    margin-top: -12px;
+}
 .number {
     color: rgb(255, 184, 4);
     font-weight: 700;
     font-size: 12px;
+    margin-left: -8px;
+    
 }
 
 .bkash-number {
     width: 50px;
     line-height: 0;
 }
-
+.bkash-number img{
+    margin-left: -8px;
+}
+.bkash-number span{
+    margin-right: 0px;
+}
 
 .input-filed {
     width: 90%;
@@ -95,7 +113,11 @@
     display: block;
 }
 /* Desktop Menu */
+.desktop-menu{
+    width: 100%;
+    border-top: 1px dotted #c8c2c2;
 
+}
 .desktop-menu-list li{
     list-style: none;
 }
@@ -113,11 +135,50 @@
     background-color: rgb(255, 184, 4);
     color: white;
 }
+.dropbtn {
+    
+    color: black;
+    
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px !important;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(255, 184, 4);
+    color: white;
+}
+
 
 /* category part */
 .category-part{
  margin-top: 140px;
- 
+ padding-top: 20px;
 }
 
 .nav-item{
@@ -141,7 +202,7 @@
     padding-right:125px;
 }
 .category-nav a{
--moz-transition: none !important;
+    -moz-transition: none !important;
     -o-transition: none !important;
     transition: none !important;
 
@@ -240,15 +301,23 @@
 
 /* Responsive */
 @media only screen and (min-width: 1200px) {
-    .desktop-menu-list {
-        margin-left: 350px !important;
-        margin-top: 0 !important;
+    .header-wrap .logo-part {
+            margin-top: 5px !important;
+            padding-left: 20px !important;
+        }
+    .header-section {
+            padding-top: 15px;
+        }
+    .category-part{
+        padding-top: 20px !important;
     }
-
-    .category-right {
+   .category-right {
         display: block !important;
     }
-        .image-2 {
+    .image-1{
+        padding-left: 20px;
+    }
+    .image-2 {
             display: block !important;
         }
     .search-icon {
@@ -288,14 +357,28 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .header-wrap .logo-part {
+            margin-top: 15px ;
+            padding-left: 10px;
+        }
+    .desktop-menu{
+        margin-top: 10px;
+    }
     .desktop-menu-list {
-            margin-left: 100px;
+            
             margin-top: 10px;
         }
     .category-right {
             display: none;
         }
-        .image-2 {
+        .category-part{
+            padding-top: 0;
+        }
+
+    /* .image-1 {
+            padding-left:  0 !important;
+        } */
+    .image-2 {
          display: none;
         }
     .header-section {
@@ -305,28 +388,39 @@
         z-index: 1;
         background-color: white;
         top: 0;
-        border-bottom: 2px solid #fdefca;
+        border-bottom: 1px dotted #c8c2c2;
     }
-        .search-icon {
-            
+    .search-icon {
             top: 10px;
             right: 0px;
-    
         }
    .input-filed{
     width: 100%;
    }
 
+   .mobile-menu {
+       top: 15px !important;
+       right: 10px;
+   }
+
 }
 @media only screen and (max-width: 576px) {
+    .header-wrap .logo-part {
+            margin-top: 10px !important;
+            padding-left: 10px !important;
+        }
     .desktop-menu{
         display: none;
     }
     .category-right{
         display: none ;
     }
+    .image-1{
+        padding-left: 0 !important;
+    }
     .image-2{
         display: none;
+        
     }
     .search-area {
         position: absolute;
@@ -336,10 +430,12 @@
 
     .contact-us {
         display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
     }
-
+    
     .bkash-part {
-        margin-top: 5px;
+        margin-top: 10px;
     }
 
    
