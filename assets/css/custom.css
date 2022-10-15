@@ -11,7 +11,8 @@
     
 }
 
-.header-wrap .logo-part {
+
+.logo-part {
     margin-top: 10px !important;
     padding-left: 26px;
 }
@@ -176,9 +177,14 @@
 
 
 /* category part */
+#page-content{
+    background-color: #eeeeee66;
+  
+}
 .category-part{
- margin-top: 140px;
- padding-top: 20px;
+    background-color: white;
+    margin-top: 140px;
+ 
 }
 
 .nav-item{
@@ -200,6 +206,7 @@
     cursor: pointer !important;
     font-weight: 500;
     padding-right:125px;
+    width: 300px !important;
 }
 .category-nav a{
     -moz-transition: none !important;
@@ -301,8 +308,8 @@
 
 /* Responsive */
 @media only screen and (min-width: 1200px) {
-    .header-wrap .logo-part {
-            margin-top: 5px !important;
+    .logo-part {
+            margin-top: 10px;
             padding-left: 20px !important;
         }
     .header-section {
@@ -354,11 +361,12 @@
     .navbar .nav-item .dropdown-menu {
         margin-top: 0;
     }
+    
 }
 
 @media only screen and (min-width: 768px) {
-    .header-wrap .logo-part {
-            margin-top: 15px ;
+    .logo-part {
+            margin-top: 15px;
             padding-left: 10px;
         }
     .desktop-menu{
@@ -376,7 +384,8 @@
         }
 
     /* .image-1 {
-            padding-left:  0 !important;
+            padding:  0 !important;
+           
         } */
     .image-2 {
          display: none;
@@ -405,7 +414,7 @@
 
 }
 @media only screen and (max-width: 576px) {
-    .header-wrap .logo-part {
+    .logo-part {
             margin-top: 10px !important;
             padding-left: 10px !important;
         }
@@ -467,6 +476,12 @@
         right: 30px;
 
     }
+    .feature-collection {
+      margin: 0 0px !important;
+    }
+        .new-arraivals {
+            margin: 0 0px !important;
+        }
 }
 
 .mobile-menu{
@@ -481,7 +496,17 @@ hr{
 }
 
 /* Product Design */
-.add-button{
+
+.product-part{
+    background-color: white;
+}
+.feature-collection{
+    margin: 0 48px;
+}
+.new-arraivals{
+    margin: 0 48px;
+}
+.addToCart-button{
     background-color:rgb(255, 184, 4) !important;
     color: white !important;
 }
