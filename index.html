@@ -78,7 +78,7 @@
                     </svg>
                 </div>
                 <p class="ml-2">YOUR ACCOUNT</p>
-                <div class="dropdown-content">
+                <div class="dropdown-login">
                     <a href="#">LOG IN</a>
                     <a href="#">SIGN UP</a>
                 
@@ -98,72 +98,96 @@
                 </a>
                 <!--Minicart Popup-->
                 <div id="header-cart" class="block block-cart">
-                    <ul class="mini-products-list">
+                    <div class="shopping-close p-2 d-flex justify-content-between">
+                        <h6 class="text-uppercase">Shopping Cart</h6>
+                        <div><a href="#" class="text-dark close-icon"><i class="anm anm-times-l" aria-hidden="true"></i></a></div>
+                    </div>
+                    <ul class="mini-products-list pt-4">
                         <li class="item">
                             <a class="product-image" href="#">
                                 <img src="assets/images/product-images/cape-dress-1.jpg" alt="3/4 Sleeve Kimono Dress"
                                     title="" />
                             </a>
                             <div class="product-details">
-                                <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
-                                <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
-                                <a class="pName" href="cart.html">Sleeve Kimono Dress</a>
-                                <div class="variant-cart">Black / XL</div>
-                                <div class="wrapQtyBtn">
-                                    <div class="qtyField">
-                                        <span class="label">Qty:</span>
-                                        <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r"
-                                                aria-hidden="true"></i></a>
-                                        <input type="text" id="Quantity" name="quantity" value="1"
-                                            class="product-form__input qty">
-                                        <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r"
-                                                aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div class="priceRow">
-                                    <div class="product-price">
-                                        <span class="money">$59.00</span>
+                                <a href="#" class="remove mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash delete-icon"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                    <path fill-rule="evenodd"
+                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                </svg></a>
+                                
+                                <a class="p-name" href="cart.html">Sleeve Kimono Dress</a>
+                                <div class="variant-cart"><span>Black / XL</span></div>
+                                
+                                <div class="d-flex">
+                                    <div><span>1 x ৳</span></div>
+                                    <div class="ml-1">
+                                        <span class="money">59.00</span>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li class="item">
                             <a class="product-image" href="#">
-                                <img src="assets/images/product-images/cape-dress-2.jpg"
-                                    alt="Elastic Waist Dress - Black / Small" title="" />
+                                <img src="assets/images/product-images/cape-dress-1.jpg" alt="3/4 Sleeve Kimono Dress"
+                                    title="" />
                             </a>
                             <div class="product-details">
-                                <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
-                                <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
-                                <a class="pName" href="cart.html">Elastic Waist Dress</a>
-                                <div class="variant-cart">Gray / XXL</div>
-                                <div class="wrapQtyBtn">
-                                    <div class="qtyField">
-                                        <span class="label">Qty:</span>
-                                        <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r"
-                                                aria-hidden="true"></i></a>
-                                        <input type="text" id="Quantity" name="quantity" value="1"
-                                            class="product-form__input qty">
-                                        <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r"
-                                                aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div class="priceRow">
-                                    <div class="product-price">
-                                        <span class="money">$99.00</span>
+                                <a href="#" class="remove mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash delete-icon"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                    <path fill-rule="evenodd"
+                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                </svg></a>
+                                
+                                <a class="p-name" href="cart.html">Sleeve Kimono Dress</a>
+                                <div class="variant-cart"><span>Black / XL</span></div>
+                                
+                                <div class="d-flex">
+                                    <div><span>1 x ৳</span></div>
+                                    <div class="ml-1">
+                                        <span class="money">59.00</span>
                                     </div>
                                 </div>
                             </div>
                         </li>
+                        <li class="item">
+                            <a class="product-image" href="#">
+                                <img src="assets/images/product-images/cape-dress-1.jpg" alt="3/4 Sleeve Kimono Dress"
+                                    title="" />
+                            </a>
+                            <div class="product-details">
+                                <a href="#" class="remove mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash delete-icon"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                    <path fill-rule="evenodd"
+                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                </svg></a>
+                                
+                                <a class="p-name" href="cart.html">Sleeve Kimono Dress</a>
+                                <div class="variant-cart"><span>Black / XL</span></div>
+                                
+                                <div class="d-flex">
+                                    <div><span>1 x ৳</span></div>
+                                    <div class="ml-1">
+                                        <span class="money">59.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
                     </ul>
-                    <div class="total">
+                    <div class="total mt-1">
                         <div class="total-in">
-                            <span class="label">Cart Subtotal:</span><span class="product-price"><span
-                                    class="money">$748.00</span></span>
+                            <span class="label font-weight-bold">Cart Subtotal:</span><span class="product-price"><span
+                                    class="money">৳ 748.00</span></span>
                         </div>
                         <div class="buttonSet text-center">
-                            <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
-                            <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
+                            <a href="cart.html" class="btn cart-button btn--small">View Cart</a>
+                            <a href="checkout.html" class="btn cart-button btn--small">Checkout</a>
                         </div>
                     </div>
                 </div>
@@ -304,8 +328,8 @@
     
     <div id="page-content">
     	<!--Home banner part-->
-    	<div class="row all-category ml-0 px-2  mx-5">
-            <div class="col-lg-3 category-main">
+    	<div class="row all-category px-2 mx-5">
+            <div class="col-lg-3 category-main ">
                 <li class="side-category">
                 
                     <div class="d-flex align-items-center side-nav-list">
@@ -330,7 +354,7 @@
                 
                 
                     <ul class="category-content">
-                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Woments Clothing</a></li>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
                     </ul>
@@ -357,7 +381,7 @@
                 
                 
                 
-                    <ul class="category-content">
+                    <ul class="category-content-2">
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
@@ -382,10 +406,35 @@
                             </svg>
                         </div>
                     </div>
+                    <ul class="category-content-3">
+                        <li><a href="#">Category-3</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                    </ul>
+                </li>
+                <li class="side-category">
+                
+                    <div class="d-flex align-items-center side-nav-list">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="dropdwon-icons">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                        </svg>
+
+                        <div class="side-nav-name">
+                            <a href="#" class=" ml-2">Women Shopping</a>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="2"
+                                stroke="currentColor" class="arrow-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                    </div>
                 
                 
                 
-                    <ul class="category-content">
+                    <ul class="category-content-4">
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
@@ -413,35 +462,7 @@
                 
                 
                 
-                    <ul class="category-content">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 1</a></li>
-                    </ul>
-                </li>
-                <li class="side-category">
-                
-                    <div class="d-flex align-items-center side-nav-list">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            class="dropdwon-icons">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
-                        </svg>
-
-                        <div class="side-nav-name">
-                            <a href="#" class=" ml-2">Women Shopping</a>
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="2"
-                                stroke="currentColor" class="arrow-icon">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg>
-                        </div>
-                    </div>
-                
-                
-                
-                    <ul class="category-content">
+                    <ul class="category-content-5">
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
@@ -468,7 +489,7 @@
                 
                 
                 
-                    <ul class="category-content">
+                    <ul class="category-content-6">
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
@@ -495,7 +516,7 @@
                 
                 
                 
-                    <ul class="category-content">
+                    <ul class="category-content-7">
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
@@ -522,7 +543,7 @@
                 
                 
                 
-                    <ul class="category-content">
+                    <ul class="category-content-8">
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
@@ -549,7 +570,7 @@
                 
                 
                 
-                    <ul class="category-content">
+                    <ul class="category-content-9">
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
@@ -576,8 +597,8 @@
                 
                 
                 
-                    <ul class="category-content">
-                        <li><a href="#">Link 1</a></li>
+                    <ul class="category-content-10">
+                        <li><a href="#">Womens Clothing</a></li>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
                     </ul>
@@ -591,7 +612,7 @@
                                 d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                         </svg>
                         <div class="side-nav-name">
-                            <a href="#" class=" ml-2">Men</a>
+                            <a href="#" class=" ml-2">Women Shopping</a>
                         </div>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="2"
@@ -600,16 +621,13 @@
                             </svg>
                         </div>
                     </div>
-                
-                
-                
-                    <ul class="category-content">
-                        <li><a href="#">Link 1</a></li>
+                    <ul class="category-content-11">
+                        <li><a href="#">Womens Clothing</a></li>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 1</a></li>
                     </ul>
                 </li>
-                
+                            
             </div>
 
         <div class="col-lg-9 image-side">
@@ -625,7 +643,7 @@
         </div>
         <hr>
         <!--End Home banner part-->
-        <div class="d-flex mx-4">
+        <div class="d-flex mx-4 ">
             <div class="mr-3 ml-4">
                 <img src="http://esho.com/assets/frontend/categories/14956949345656.jpg" alt="">
             </div>
