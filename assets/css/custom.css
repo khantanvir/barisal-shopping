@@ -19,7 +19,7 @@
 .call-number {
     margin-top: 10px;
     line-height: 0;
-    color: rgb(255, 184, 4);
+    color: #fc2779;
     
 }
 
@@ -31,7 +31,7 @@
     margin-top: -12px;
 }
 .number {
-    color: rgb(255, 184, 4);
+    color: black;
     font-weight: 700;
     font-size: 12px;
     margin-left: -8px;
@@ -59,7 +59,7 @@
 .search-icon {
     position: absolute;
     padding: 10px 15px;
-    background-color: rgb(255, 184, 4);
+    background-color: #fc2779;
     border: none;
     border-radius: 5px;
     color: white;
@@ -84,6 +84,7 @@
 }
 
 .dropdown-login {
+    border-top: 2px solid #fc2779;
     display: none;
     position: absolute;
     top: 30px;
@@ -96,7 +97,7 @@
 .dropdown-login a {
     font-size: 0.8rem !important;
     color: black;
-    padding: 0px 12px;
+    padding: 4px 12px;
     text-decoration: none !important;
     display: block;
     font-weight: 500;
@@ -135,6 +136,7 @@
 .desktop-menu{
     width: 100%;
     border-top: 1px dotted #c8c2c2;
+    background-color: #fc2779;
 
 }
 .desktop-menu-list li{
@@ -142,18 +144,21 @@
 }
 .desktop-menu-list li a{
    text-decoration: none;
+   text-transform: uppercase;
    font-family: 'Poppins', sans-serif;
-   font-size: 1rem;
-   color: black;
-   padding: 5px 12px;
+   font-size: 0.9rem;
+   
+   padding: 20px 12px;
    border-radius: 3px;
   -moz-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
 }
-.desktop-menu-list li a:hover{
-    background-color: rgb(255, 184, 4);
-    color: white;
+.desktop-menu-name{
+   color: white !important;
+}
+.desktop-menu-name:hover{
+   color: white !important;
 }
 .dropbtn {
     color: black;
@@ -169,29 +174,44 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 30px;
+    top: 40px;
     background-color: #fff;
     border-radius: 2px;
+    padding-top: 5px;
     min-width: 140px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid black;
+    
     z-index: 1;
 
 }
 
-.dropdown-content a {
+.dropdown-content li{
     color: black;
-    font-size: 0.8rem !important;
-    padding: 5px 16px !important;
+    
+    padding: 5px 0px !important;
     text-decoration: none;
-    display: block;
     border-radius: 3px;
     font-family: 'Poppins', sans-serif;
-    width: 200px;
+    width: 250px !important;
+}
+.dropdown-content li a{
+
+    font-size: 0.8rem !important;
+    color: black;
+    text-decoration: none;
+    
+    font-family: 'Poppins', sans-serif;
+    
 }
 
+.dropdown .dropdown-content li:hover {
+  background-color: #eeeeee66;
+    
+}
+.dropdown .dropdown-content li a:hover{
+    color:#fc2779;
 
-.dropdown .dropdown-content li a{
-    color:red;
+    
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -201,7 +221,7 @@
 /* category part */
 .category-main{
     
-    border-right: 1px solid rgb(255, 184, 4);
+    border-right: 1px solid #fc2779;
 }
 .side-category{
     position: relative;
@@ -219,7 +239,7 @@
     position: absolute;
     top: 0px;
     left: 230px;
-    background-color: #fff;
+    background-color: rgb(245 245 243);
     min-width: 140px;
     /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
     border-left: 1px solid #c8c2c2 !important;
@@ -234,16 +254,20 @@
     color: black;
     padding: 5px 20px;
     text-decoration: none !important;
+    text-transform: uppercase;
     display: block;
     font-weight: 500;
     font-size: 0.8rem;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
     font-family: 'Poppins', sans-serif;
     width: 200px;
 
 }
 .category-content a:hover {
-    text-decoration: underline !important;
-    color: black;
+    
+    color: #fc2779;
 }
 /* Category-2 */
 .category-content-2{
@@ -587,6 +611,7 @@
 }
 .side-nav-name a{
     text-decoration: none !important;
+    text-transform: uppercase;
     color:black;
     text-decoration: none;
     -moz-transition: none !important;
@@ -596,7 +621,7 @@
 }
 
 .side-category:hover .side-nav-list {
-    background-color: rgb(255, 184, 4);
+    background-color: #fc2779;
     
 }
 
@@ -616,9 +641,9 @@
 }
 .all-category{
     background-color: white;
-    margin-top: 130px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    margin-top: 110px;
+    padding-top: 15px;
+    padding-bottom: 10px;
  
 }
 
@@ -731,7 +756,7 @@
         z-index: 1;
         background-color: white;
         top: 0;
-        border-bottom: 1px dotted #c8c2c2;
+        border-bottom: 1px solid #fff;
     }
     .search-icon {
             top: 10px;
@@ -820,6 +845,7 @@
 
     }
     .all-category{
+        margin-top: 160px;
         padding: 0;
     }
     .image-part img {
@@ -867,7 +893,7 @@ hr{
     margin: 0 48px;
 }
 .addToCart-button{
-    background-color:rgb(255, 184, 4) !important;
+    background-color:#fc2779 !important;
     color: white !important;
 }
 .addToCart-button:hover{
@@ -879,10 +905,10 @@ hr{
     padding: 0.1rem 0.75rem !important;
 }
 .plus-icon:hover{
-    background-color: rgb(255, 100, 0) !important;
+    background-color: #fc2779 !important;
 }
 .wishlist-btn:hover{
-background-color: rgb(255, 100, 0) !important;
+background-color: #fc2779 !important;
 }
 h3{
     text-transform: uppercase;
@@ -890,7 +916,7 @@ h3{
 
 /* news letter */
 .newsletter-button{
-    background-color: rgb(255, 184, 4) !important;
+    background-color: #fc2779 !important;
 }
 .newsletter-button:hover{
     background-color: rgb(255, 100, 0) !important;
@@ -902,7 +928,7 @@ h3{
 }
 
 .site-info {
-    background-color: rgb(255, 184, 4);
+    background-color: #5c0f8b;
 }
 .main-footer{
     background-color:rgb(0, 0, 0);
