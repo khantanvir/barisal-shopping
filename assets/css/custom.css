@@ -1116,7 +1116,7 @@ h3 {
 
 /* details page */
 .details-part{
-    margin-top: 130px;
+    margin-top: 140px !important;
 }
 .product-labels{
     z-index: 0 !important;
@@ -1124,11 +1124,9 @@ h3 {
 .product-buttons{
     z-index: 0 !important;
 }
-/* .zoompro-span img{
-    height: 200px !important;
-} */
+
 .product-details-left{
-    height: 550px !important;
+    height: 470px !important;
     overflow: hidden;
     margin-bottom: 0 !important;
 }
